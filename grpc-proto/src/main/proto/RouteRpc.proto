@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option java_multiple_files=true;
+option java_package = "org.Eeap.examples.lib";
+option java_outer_classname="RouteRpcProto";
+
+service RouteRpc {
+  rpc MyFunction(Number) returns (Number) {}
+  rpc BSGetServerResponse(stream Message) returns (stream Message) {}
+  rpc CSGetServerResponse(stream Message) returns (Number) {}
+  rpc SSGetServerResponse(Number) returns (stream Message) {}
+}
+message Number {
+  int32 value = 1;
+}
+
+message Message {
+  string message = 1;
+}
