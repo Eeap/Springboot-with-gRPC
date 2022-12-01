@@ -16,7 +16,6 @@ import java.util.concurrent.TimeUnit;
 public class BidirectionalGrpcClientService {
     @GrpcClient("bidirectional")
     private RouteRpcGrpc.RouteRpcStub stub; //비동기식 stub이라서 서버로부터 메시지를 받을 떄까지 기다리는 작업 필요
-    private int count = 1;
 
     public List<String> sendMessage() {
         List<String> msgList = new ArrayList<>();
