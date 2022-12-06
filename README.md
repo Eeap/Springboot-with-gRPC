@@ -22,6 +22,8 @@ $ java -jar xxx.jar // both client and server
 ```shell
 $ curl 127.0.0.1:8081/unary
 ```
+![](../../Downloads/Springboot-with-gRPC-main/unary-grpc.png)
+
 ## Bi-directional Streaming-gRPC
 `cd build/libs`
 ```
@@ -30,6 +32,8 @@ $ java -jar xxx.jar // both client and server
 ```shell
 $ curl 127.0.0.1:8081/bidirectional
 ```
+![](../../Downloads/Springboot-with-gRPC-main/bidirectional-grpc.png)
+
 ## client to server Streaming-gRPC
 `cd build/libs`
 ```
@@ -38,6 +42,8 @@ $ java -jar xxx.jar // both client and server
 ```shell
 $ curl 127.0.0.1:8081/clientStreaming
 ```
+
+![](../../Downloads/Springboot-with-gRPC-main/clientStreaming-grpc.png)
 ## server to client Streaming-gRPC
 `cd build/libs`
 ```
@@ -46,3 +52,5 @@ $ java -jar xxx.jar // both client and server
 ```shell
 $ curl 127.0.0.1:8081/serverStreaming
 ```
+
+![](../../Downloads/Springboot-with-gRPC-main/serverStreaming-grpc.png)
